@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Money trip</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	
+<div class="container">
+  <div class="row justify-content-md-center">
+  	<div class="col-8"><h1 class="text-center">Divider</h1></div>
+    <div class="col-8">
+			<div class="form">
+				<form class="needs-validation">
+				  <div class="mb-3">
+						<label for="amount" class="form-label">Amount</label>
+						<input type="number" class="form-control" id="amount" required>
+				  </div>
+					<div class="mb-3">
+					  <label for="note" class="form-label">Note</label>
+					  <textarea class="form-control" id="note" rows="3" required></textarea>
+					</div>
+				  <div class="mb-3 form-select-box">
+						<select class="form-select" aria-label="Default select example" required>
+						  <option selected>Who spent?</option>
+						  <option value="ashim">Ashim</option>
+						  <option value="faruk">Faruk</option>
+						  <option value="raihan">Raihan</option>
+						  <option value="rouf">Rouf</option>
+						</select>
+				  </div>
+					<div class="mb-3">
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="ashim">
+						  <label class="form-check-label" for="ashim">
+						    Ashim
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="faruk">
+						  <label class="form-check-label" for="faruk">
+						   Faruk
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="raihan">
+						  <label class="form-check-label" for="raihan">
+						   Raihan
+						  </label>
+						</div>
+						<div class="form-check">
+						  <input class="form-check-input" type="checkbox" value="" id="rouf">
+						  <label class="form-check-label" for="rouf">
+						   Rouf
+						  </label>
+						</div>
+					</div>
+				  <button type="submit" class="btn btn-primary">Add</button>
+				</form>
+			</div>
+			<!-- Form end -->
+
+			<div class="space" style="height:100px;"></div>
+
+			<!-- Account section -->
+			<div class="calculation">
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Ashim</th>
+				      <th scope="col">Faruk</th>
+				      <th scope="col">Raihan</th>
+				      <th scope="col">Rouf</th>
+				      <th scope="col">Note</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td><strong style="color:var(--bs-primary);">50</strong></td>
+				      <td>-25</td>
+				      <td>0</td>
+				      <td>0</td>
+				      <td>Food</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>-250</td>
+				      <td>-250</td>
+				      <td><strong style="color:var(--bs-primary);">1000</strong></td>
+				      <td>-250</td>
+				      <td>Rent</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>-6.66</td>
+				      <td>0</td>
+				      <td>-6.66</td>
+				      <td><strong style="color:var(--bs-primary);">20</strong></td>
+				      <td>Food</td>
+				    </tr>
+				  </tbody>
+				  <tfoot>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Total</th>
+				      <th scope="col">Total</th>
+				      <th scope="col">Total</th>
+				      <th scope="col">Total</th>
+				      <th scope="col">Note</th>
+				    </tr>
+				    <tr>
+				    	<td></td>
+				    	<td>Faruk - (+20)</td>
+				    	<td>Ashim - (-20)</td>
+				    	<td>Ashim - (+20)</td>
+				    	<td>Ashim - (-10)</td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td></td>
+				    	<td>Raihan - (-20)</td>
+				    	<td>Raihan - (+50)</td>
+				    	<td>Faruk - (-50) </td>
+				    	<td>Faruk - (-50)</td>
+				    	<td></td>
+				    </tr>
+				    <tr>
+				    	<td></td>
+				    	<td>Rouf - (+10)</td>
+				    	<td>Rouf - (+50)</td>
+				    	<td>Rouf - (-100)</td>
+				    	<td>Raihan (+100)</td>
+				    	<td></td>
+				    </tr>
+				  </tfoot>
+				</table>
+			</div>	
+			<!-- End Account section -->
+
+    </div>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+<script>
+	
+</script>
+</body>
+</html>
